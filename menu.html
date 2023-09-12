@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+  </head>  
+
+  <div class="topnav">
+   <a style="background-color: #800000 ;  color: white" href="burger.html">FastBurger</a>
+   <a href="register.html" target=>Register</a>
+   <a href="login.html" target=>Login</a>
+   <a href="order.html" target=>Order</a>
+   <a href="menu.html" target=>Menu</a>
+   <a href="rating.html" target=>Rating</a>
+  </div>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <body>
+
+    <div style="text-align:center">
+      <h2>Menu</h2>
+      <p>The choice of restaurant</p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="menu1.png" alt="Classic burger" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="menu2.png" alt="Big burger" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="menu3.jpg" alt="Black burger" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="menu4.png" alt="Hot burger" style="width:100%" onclick="myFunction(this);">
+      </div>
+    </div>
+
+    <div class="container" style="max-width: 1000px">
+      <span style="position: absolute" onclick="this.parentElement.style.display='none'" class="closebtn">×</span>
+      <img id="expandedImg" style="width:50% ; class="center">
+      <div id="imgtext"></div>
+    </div>
+
+    <script>
+      function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

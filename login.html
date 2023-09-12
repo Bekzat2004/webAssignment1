@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log in page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+  </head>  
+
+  <style>
+    .w3-container {
+      padding:auto;
+      margin:auto;
+      text-align:center;
+    }
+  </style>
+  <body>
+    <div class="topnav">
+     <a style="background-color: #800000 ;  color: white" href="burger.html">FastBurger</a>
+     <a href="register.html" target=>Register</a>
+     <a href="login.html" target=>Login</a>
+     <a href="order.html" target=>Order</a>
+     <a href="menu.html" target=>Menu</a>
+     <a href="rating.html" target=>Rating</a>
+    </div>
+
+    <center>
+      <div class="w3-container">
+        <h2>Login</h2>
+        <form method="post" action="login.php">
+          <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+          <input type="password" placeholder="Enter Password" name="psw" required><br>
+          <button type="submit">Login</button><br>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label><br><br>
+          <a style="font-size: 100%" href="register.html">Already have not an account? Register</a>
+        </form>
+      </div>
+    </center>
+  </body>
+</html>
